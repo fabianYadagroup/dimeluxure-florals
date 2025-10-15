@@ -115,12 +115,12 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header - Sticky Navigation */}
-      <header className="bg-black border-b border-black sticky top-0 z-50 shadow-sm">
+      <header className="bg-white border-b border-neutral-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-4 md:py-5 lg:py-6">
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 text-white hover:text-gold transition-colors"
+              className="lg:hidden p-2 text-black hover:text-gold transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -138,16 +138,16 @@ function App() {
 
             {/* Right Side Icons */}
             <div className="flex items-center gap-3 md:gap-4">
-              <button className="p-2 text-gold hover:text-white rounded-full transition-colors">
+              <button className="p-2 text-black hover:text-gold rounded-full transition-colors">
                 <Search className="h-5 w-5 md:h-6 md:w-6" />
               </button>
               
               <Sheet>
                 <SheetTrigger asChild>
-                  <button className="relative p-2 text-gold hover:text-white rounded-full transition-colors">
+                  <button className="relative p-2 text-black hover:text-gold rounded-full transition-colors">
                     <ShoppingCart className="h-5 w-5 md:h-6 md:w-6" />
                     {getTotalItems() > 0 && (
-                      <Badge className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 rounded-full bg-gold text-black text-xs font-bold">
+                      <Badge className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 rounded-full bg-black text-white text-xs font-bold">
                         {getTotalItems()}
                       </Badge>
                     )}
@@ -236,11 +236,11 @@ function App() {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="lg:hidden border-t border-neutral-800 py-4">
+            <div className="lg:hidden border-t border-neutral-200 py-4">
               <nav className="space-y-2">
-                <a href="#collections" className="block px-4 py-2 text-white hover:text-gold hover:bg-neutral-900 rounded transition-colors">Collections</a>
-                <a href="#about" className="block px-4 py-2 text-white hover:text-gold hover:bg-neutral-900 rounded transition-colors">About</a>
-                <a href="#contact" className="block px-4 py-2 text-white hover:text-gold hover:bg-neutral-900 rounded transition-colors">Contact</a>
+                <a href="#collections" className="block px-4 py-2 text-black hover:text-gold hover:bg-neutral-100 rounded transition-colors">Collections</a>
+                <a href="#about" className="block px-4 py-2 text-black hover:text-gold hover:bg-neutral-100 rounded transition-colors">About</a>
+                <a href="#contact" className="block px-4 py-2 text-black hover:text-gold hover:bg-neutral-100 rounded transition-colors">Contact</a>
               </nav>
             </div>
           )}
