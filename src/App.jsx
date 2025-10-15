@@ -117,7 +117,7 @@ function App() {
       {/* Header - Sticky Navigation */}
       <header className="bg-black border-b border-black sticky top-0 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20 md:h-24">
+          <div className="flex items-center justify-between h-28 md:h-36 lg:h-40">
             {/* Mobile Menu Button */}
             <button
               className="lg:hidden p-2 text-white hover:text-gold transition-colors"
@@ -131,7 +131,7 @@ function App() {
               <img 
                 src={logo} 
                 alt="Dime LUXURE Florals" 
-                className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                className="h-24 md:h-32 lg:h-36 w-auto object-contain"
               />
             </div>
 
