@@ -117,7 +117,7 @@ function App() {
       {/* Header - Sticky Navigation */}
       <header className="bg-black border-b border-black sticky top-0 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-28 md:h-36 lg:h-40">
+          <div className="flex items-center justify-between py-4 md:py-5 lg:py-6">
             {/* Mobile Menu Button */}
             <button
               className="lg:hidden p-2 text-white hover:text-gold transition-colors"
@@ -127,11 +127,12 @@ function App() {
             </button>
 
             {/* Centered Logo */}
-            <div className="flex-1 flex justify-center lg:justify-center">
+            <div className="flex-1 flex justify-center items-center">
               <img 
                 src={logo} 
                 alt="Dime LUXURE Florals" 
-                className="h-24 md:h-32 lg:h-36 w-auto object-contain"
+                className="w-40 sm:w-48 md:w-56 lg:w-60 xl:w-64 max-w-[250px] h-auto object-contain"
+                style={{ maxHeight: '80px' }}
               />
             </div>
 
