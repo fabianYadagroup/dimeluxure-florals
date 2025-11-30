@@ -131,8 +131,8 @@ function App() {
               <img 
                 src={logo} 
                 alt="Dime LUXURE Florals" 
-                className="w-40 sm:w-48 md:w-56 lg:w-60 xl:w-64 max-w-[250px] h-auto object-contain"
-                style={{ maxHeight: '80px' }}
+                className="w-80 sm:w-96 md:w-[28rem] lg:w-[32rem] xl:w-[36rem] max-w-[500px] h-auto object-contain"
+                style={{ maxHeight: '160px' }}
               />
             </div>
 
